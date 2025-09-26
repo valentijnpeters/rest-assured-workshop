@@ -28,8 +28,13 @@ The .pptx/.pdf/.odp file in the root folder contains all slides from the worksho
 
 Comments? Saying thanks?
 ---
-Feel free to file an issue here, or email me at bas@ontestautomation.com.
+This repo differs from the original, there is a test8 that hits a live api.
+The call is also used in this test application https://softwaretestingbreak.com/testapplication-web.php
+This is done with test9!
 
-I'd rather have you deliver the workshop instead...
+(you can try it by using 1, 1, 1, in the input fields. of the web-testapplication...
+
+Feel free to file an issue here, or email, go to https://softwaretestingbreak.com/contact.php
+
 ---
 Sure, I'd love to. Again, email me and I'll be happy to discuss options. In house or at your conference, I'm sure we can work something out.
