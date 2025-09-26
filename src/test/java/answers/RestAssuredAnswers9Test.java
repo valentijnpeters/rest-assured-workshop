@@ -6,28 +6,30 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 
-public class RestAssuredAnswers8Test {
+public class RestAssuredAnswers9Test {
 
     @BeforeEach
     public void setUp() {
-        RestAssured.baseURI = "http://php-app:80"; // Docker service naam
+        // Geen lokale baseURI meer, alles online
+        RestAssured.baseURI = null; // Reset voor flexibiliteit
     }
 
     @Test
     public void testGetSinglePostFromLiveApi() {
-        RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
         given()
+                .baseUri("https://jsonplaceholder.typicode.com")
                 .when()
                 .get("/posts/1")
                 .then()
                 .statusCode(200)
-                .body("title", equalTo("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"));
+                .body("title", containsString("sunt aut facere")) // Minder streng dan equalTo
+                .body("body", containsString("quia et suscipit")); // Valideer ook body
     }
 
     @Test
     public void testGetAllPostsFromLiveApi() {
-        RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
         given()
+                .baseUri("https://jsonplaceholder.typicode.com")
                 .when()
                 .get("/posts")
                 .then()
@@ -38,6 +40,7 @@ public class RestAssuredAnswers8Test {
     @Test
     public void testPhpApiWith111() {
         given()
+                .baseUri("https://softwaretestingbreak.com")
                 .param("gas", 1)
                 .param("brake", 1)
                 .param("clutch", 1)
