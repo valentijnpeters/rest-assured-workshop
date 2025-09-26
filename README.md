@@ -25,7 +25,7 @@ mvn clean test
 Running the tests in Github Actions! (pipeline)
 ---
 Make a small textual change or so  
-Go to Github.com, go to your account (fork or clone the repo), see the 3th button on the left called ' > ACTIONS '
+Go to Github.com, go to your account (fork or clone the repo), see the 3th button on the left called ' ACTIONS '
 It will run the tests because of the file rest-assured-tests.yml that is now added in the directory 'workflows'
 study this file!
 
