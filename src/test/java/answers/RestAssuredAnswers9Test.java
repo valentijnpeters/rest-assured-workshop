@@ -11,7 +11,7 @@ public class RestAssuredAnswers9Test {
     @BeforeEach
     public void setUp() {
         // Geen lokale baseURI meer, alles online
-        RestAssured.baseURI = null; // Reset voor flexibiliteit
+        RestAssured.baseURI = "https://jsonplaceholder.typicode.com"; // Reset voor flexibiliteit
     }
 
     @Test
