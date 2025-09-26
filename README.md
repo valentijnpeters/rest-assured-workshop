@@ -33,7 +33,7 @@ This repo differs from the original,
 The call is also used in this test application https://softwaretestingbreak.com/testapplication-web.php
 This is done with test9!
 
-(you can try it by using 1, 1, 1, in the input fields. of the web-testapplication...
+(you can try it by using 1, 1, 1, in the input fields. of the web-testapplication...)
 
 Feel free to file an issue here, or email, go to https://softwaretestingbreak.com/contact.php
 
