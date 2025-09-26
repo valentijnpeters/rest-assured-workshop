@@ -28,7 +28,8 @@ The .pptx/.pdf/.odp file in the root folder contains all slides from the worksho
 
 Comments? Saying thanks?
 ---
-This repo differs from the original, there is a test8 that hits a live api.
+This repo differs from the original,
+(It extends and focuses on other aspects), there is a test8 that hits a live api.
 The call is also used in this test application https://softwaretestingbreak.com/testapplication-web.php
 This is done with test9!
 
